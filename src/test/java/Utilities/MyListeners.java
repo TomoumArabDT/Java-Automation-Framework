@@ -57,8 +57,8 @@
 //            //Raise Jira Ticket:
 //            System.out.println("is Ticket ready for JIRA : " + isTicketReady);
 //            JiraServiceProvider jiraSp = new JiraServiceProvider("https://arabdt.atlassian.net//",
-//                    "atomoum@arabdt.com",
-//                    "Tom01007424788",
+//                    "",
+//                    "",
 //                    "NB - QC Team Activities");
 //
 //            String issueSummary = "Automation TestCase_" + result.getMethod().getConstructorOrMethod().getMethod().getName()
