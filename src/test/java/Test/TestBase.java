@@ -77,9 +77,9 @@ public class TestBase extends AbstractTestNGCucumberTests {
 
     @AfterMethod
     public void tearDown() {
-//        if (ITestResult.FAILURE == result.getStatus()) {
-//            takeScreenshot(result.getName());
-//        }
+        if (ITestResult.FAILURE == result.getStatus()) {
+            takeScreenshot(result.getName());
+        }
         // Quit the driver
         if (driver != null) {
             driver.quit();
