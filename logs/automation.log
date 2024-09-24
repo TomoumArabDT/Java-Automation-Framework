@@ -1,0 +1,4 @@
+2024-09-23 16:28:07 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\ArabDT\IdeaProjects\ProjectCreation\testng.xml
+
+2024-09-23 16:28:09 [main] WARN  org.testng.internal.Utils - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
