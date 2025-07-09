@@ -1,7 +1,9 @@
 package Test;
 
 
+import config.ConfigurationManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -47,12 +49,13 @@ public class TestBase extends AbstractTestNGCucumberTests {
 //        String chrome = System.getProperty("user.dir")+"\\Chrome_Driver\\chromedriver.exe";
 //        System.setProperty("webdriver.chrome.driver", chrome);
         //try new setup
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--remote-allow-origins=*");
-//        //options.addArguments("--headless");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--headless");
 //        driver =  new ChromeDriver(options);
 //        driver.manage().window().maximize();
 
+        RestAssured.baseURI = "https://68539ea1a2a37a1d6f4927f9.mockapi.io/";
         String reportPath = "target/cucumberReports/" + browser + "-cucumber-pretty.html";
         System.setProperty("cucumber.plugin", "html:" + reportPath);
 
@@ -77,10 +80,10 @@ public class TestBase extends AbstractTestNGCucumberTests {
 
     @AfterMethod
     public void tearDown() {
-        if (ITestResult.FAILURE == result.getStatus()) {
-            takeScreenshot(result.getName());
-        }
-        // Quit the driver
+//        if (ITestResult.FAILURE == result.getStatus()) {
+//            takeScreenshot(result.getName());
+//        }
+//        // Quit the driver
         if (driver != null) {
             driver.quit();
         }

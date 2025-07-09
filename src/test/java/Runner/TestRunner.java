@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
                 "json:target/cucumberReports/cucumber-TestReport.json",
                 "rerun:target/cucumberReports/rerun.txt",
                 "junit:target/cucumberReports/cukes.xml",},monochrome = true
-        ,tags = "@tag0"
+        ,tags = "@tag01"
 )
 
 public class TestRunner extends TestBase{

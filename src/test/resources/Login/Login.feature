@@ -10,14 +10,15 @@ Feature: Register Owner
     When enter username "standard_user" and password "secret_sauce"
     Then validate home page appeared
 
-  @tag0
+  @tag01
   Scenario Outline: Owner Already Exist
     When enter username <username> and password <password>
     Then validate home page appeared
 
+
     Examples:
       | username | password |
-      | "locked_out_user"    | "secret_sauce"|
+      | "standard_user"    | "secret_sauce"|
       | "user2 "   | "secret_sauce"|
 
 
@@ -31,5 +32,8 @@ Feature: Register Owner
 #    Given user data is loaded from CSV "csvdata.csv"
 #    Given go to the website
 #    And user logs in using data where "username" is "testUser" and gets "password"
+
+
+
 
 

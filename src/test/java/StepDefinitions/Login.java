@@ -13,10 +13,19 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.fail;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
+
+import Endpoints.UserEndpoints;
+import io.restassured.response.Response;
+
+
 
 
 public class Login extends TestBase {
@@ -31,6 +40,27 @@ public class Login extends TestBase {
     public void login() {
         logger.info("Navigating to login page");
         loginobject.loadPage();
+
+    }
+
+
+    @Given("go to the website API")
+    public void loginAPI() {
+        String requestBody = "{ \"name\": \"Ahmed\", \"job\": \"QA Engineer\" }";
+
+        Response response = UserEndpoints.getUser(requestBody);
+
+        response.then().log().all()
+                .assertThat().statusCode(200)
+                .assertThat().body("[0].name",equalTo("Dorothy Schiller"));
+
+       // assertEquals(response.getStatusCode(), 200);
+//        assertEquals(response.jsonPath().getString("name"), "Ahmed");
+//        assertEquals(response.jsonPath().getString("job"), "QA Engineer");
+
+//        given().baseUri("https://68539ea1a2a37a1d6f4927f9.mockapi.io/api/v1/")
+//                .when().get("users")
+//                .then().log().all();
 
     }
 

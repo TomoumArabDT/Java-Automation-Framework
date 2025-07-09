@@ -1,4 +1,23 @@
-2024-09-23 16:28:07 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
-  C:\Users\ArabDT\IdeaProjects\ProjectCreation\testng.xml
-
-2024-09-23 16:28:09 [main] WARN  org.testng.internal.Utils - The test method 'io.cucumber.testng.AbstractTestNGCucumberTests.runScenario' will be skipped since its data provider 'scenarios' returned an empty array or iterator. 
+2025-07-09 18:13:10 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+2025-07-09 18:13:10 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ArabDT\.cache\selenium\chromedriver\win64\138.0.7204.94\chromedriver.exe
+2025-07-09 18:13:11 [main] INFO  Pages.BasePage - BasePage initialized with WebDriver
+2025-07-09 18:13:11 [main] INFO  Pages.BasePage - BasePage initialized with WebDriver
+2025-07-09 18:13:11 [main] INFO  StepDefinitions.Login - Navigating to login page
+2025-07-09 18:13:11 [main] INFO  Pages.BasePage - Loading page: https://www.saucedemo.com/
+2025-07-09 18:13:12 [main] INFO  StepDefinitions.Login - Entering valid credentials
+2025-07-09 18:13:12 [main] INFO  Pages.BasePage - Sending text 'standard_user' to element: By.name: user-name
+2025-07-09 18:13:12 [main] INFO  Pages.BasePage - Sending text 'secret_sauce' to element: By.name: password
+2025-07-09 18:13:12 [main] INFO  Pages.BasePage - Clicking element: By.id: login-button
+2025-07-09 18:13:12 [main] INFO  Pages.BasePage - Finding element: By.className: app_logo
+2025-07-09 18:13:12 [main] INFO  Pages.BasePage - Finding element: By.className: app_logo
+2025-07-09 18:13:13 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 138.0.7204.94 (resolved driver for Chrome 138)
+2025-07-09 18:13:13 [main] INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\ArabDT\.cache\selenium\chromedriver\win64\138.0.7204.94\chromedriver.exe
+2025-07-09 18:13:14 [main] INFO  Pages.BasePage - BasePage initialized with WebDriver
+2025-07-09 18:13:14 [main] INFO  Pages.BasePage - BasePage initialized with WebDriver
+2025-07-09 18:13:14 [main] INFO  StepDefinitions.Login - Navigating to login page
+2025-07-09 18:13:14 [main] INFO  Pages.BasePage - Loading page: https://www.saucedemo.com/
+2025-07-09 18:13:14 [main] INFO  StepDefinitions.Login - Entering valid credentials
+2025-07-09 18:13:14 [main] INFO  Pages.BasePage - Sending text 'user2 ' to element: By.name: user-name
+2025-07-09 18:13:14 [main] INFO  Pages.BasePage - Sending text 'secret_sauce' to element: By.name: password
+2025-07-09 18:13:14 [main] INFO  Pages.BasePage - Clicking element: By.id: login-button
+2025-07-09 18:13:15 [main] INFO  Pages.BasePage - Finding element: By.className: app_logo
