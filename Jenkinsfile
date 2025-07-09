@@ -12,6 +12,7 @@ pipeline {
                 echo 'funcation test'
             }
         }
+        
         stage('Deploy') {
             steps {
                 echo 'Deploy prodaction'
