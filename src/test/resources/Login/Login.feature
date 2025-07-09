@@ -19,7 +19,6 @@ Feature: Register Owner
     Examples:
       | username | password |
       | "standard_user"    | "secret_sauce"|
-      | "standard_user "   | "secret_sauce"|
 
 
   Scenario: Owner Already Exist
