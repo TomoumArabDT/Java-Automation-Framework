@@ -9,10 +9,9 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'funcation test'
+                echo 'non funcation test'
             }
         }
-        
         stage('Deploy') {
             steps {
                 echo 'Deploy prodaction'
